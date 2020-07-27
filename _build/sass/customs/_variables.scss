@@ -1,0 +1,39 @@
+// Custom variables  
+
+$body-bg:                   #ffffff !default;
+$body-color:                #6a7191 !default; 
+
+// Color Scheme
+@import "variables/color-scheme";
+
+// Options
+// Quickly modify global styling by enabling or disabling optional features.
+@import "variables/options";  
+
+
+//$grid-gutter-width: 38px !default; 
+
+$btn-border-radius:              2px !default;
+$btn-border-radius-lg:           2px !default;
+$btn-border-radius-sm:           2px !default;
+
+$btn-font-size-sm: 1rem * .675 !default;
+
+// navbar
+@import "variables/navbar";
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1310px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1250px
+) !default;

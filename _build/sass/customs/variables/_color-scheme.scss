@@ -1,0 +1,38 @@
+//
+// Color system 
+// dd6e42-e8dab2-4f6d7a-c0d6df-eaeaea
+// https://coolors.co/dd6e42-e8dab2-4f6d7a-c0d6df-eaeaea
+//
+
+$primary: #2c63f4 !default;
+$secondary: #f4a300 !default;
+$dark: #2a313b!default;
+$light: #f5f5fb!default;
+// stylelint-disable
+ 
+
+// No need to add primary, secondary and so on, just the custom ones. This way $theme-colors also will include all custom ones, so bg-blue, btn-blue, etc, will work
+// 
+/*
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge((
+  "blue":    $blue,
+  "indigo":  $indigo,
+  "purple":    $purple,
+  "pink":       $pink,
+  "red":    $red,
+  "orange":     $orange,
+  "yellow":      $yellow,
+  "green":       $green,
+  "teal":       $teal,
+  "cyan":       $cyan
+), $theme-colors); 
+
+*/
+
+// $colors: () !default;
+// $colors: map-remove( $colors, "blue", "indigo", "purple");
+
+// $theme-colors: map-remove($theme-colors, "success", "info", "danger");

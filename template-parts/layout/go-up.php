@@ -1,0 +1,1 @@
+<div id="go-up"><?php echo apply_filters('wpbc/filter/layout/go-up', '<a href="#" class="btn btn-light"><i class="fa fa-angle-up"></i></a>');?></div>
