@@ -1,8 +1,8 @@
+
+
 +function(t){ 
  	
-	$(window).on('bc_inited',function(){
-		$('[data-is-inview]').is_inview(); 
-	});
+	$(window).on('bc_inited',function(){ $('[data-is-inview]').is_inview();  });
 
 
 	$(window).on('bc_inited, scroll, resize',function(){
@@ -21,14 +21,21 @@
 
 	$('[data-btn="fx"]').each(function(){ 
 		var me = $(this);
-		if(me.find('.fx-w').length<=0){
-			var x = me.attr('data-fx-over') ? me.attr('data-fx-over') : me.html();
-			me.html( '<span class="fx-w">'+ me.html() +'</span><span class="fx-x">'+ x +'</span>' );
-		}
+		if(!$('html').hasClass('touchevents')){
+			me.addClass('js-enabled');
+			if(me.find('.fx-w').length<=0){
+				var x = me.attr('data-fx-over') ? me.attr('data-fx-over') : me.html();
+				me.html( '<span class="fx-w">'+ me.html() +'</span><span class="fx-x">'+ x +'</span>' );
+			}
+		} 
+		
 	}); 
  	
  	$('[data-slick]').on('init', function(slick){  
- 		 
+ 		var me = $(this);
+		if(!$('html').hasClass('touchevents')){
+			me.find('.custom-slick-arrow').addClass('js-enabled'); 
+		} 
 	});
 
 }(jQuery); 

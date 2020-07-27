@@ -149,7 +149,7 @@
 			<div class="row ui-footer-copy">
 				<div class="col-12 text-center">
 
-					<p>Diseño, desarrollo y diagramación editorial por <a href="http://nomadeweb.com" target="_blank"><img width="90" src="<?php echo get_stylesheet_directory_uri(); ?>/images/theme/nomade.svg" alt="NomadeWeb"/></a></p>
+					<p class="text-white">Diseño, desarrollo y diagramación editorial por <a href="http://nomadeweb.com" target="_blank"><img width="90" src="<?php echo get_stylesheet_directory_uri(); ?>/images/theme/nomade.svg" alt="NomadeWeb"/></a></p>
 					
 					<p><?php echo WPBC_get_theme_settings("footer_copyright"); ?></p>
 				

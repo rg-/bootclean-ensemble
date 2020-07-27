@@ -46,12 +46,12 @@ $next = '#'.$get_sections[0]['id'];
 							'delay' => '2.2s',
 							'class' => 'gmt-2'
 						)); ?>>
-						<p><a href="<?php echo $next;?>" class="scroll-to btn btn-secondary" data-btn="fx">Descubrí más [icon_arrow_down sm=1]</a></p>
+						<p class="text-center text-md-left"><a href="<?php echo $next;?>" class="scroll-to btn btn-secondary" data-btn="fx">Descubrí más [icon_arrow_down sm=1]</a></p>
 					</div>
 
 
 
-					<div class="gmt-2 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-between">
+					<div class="page_header_logos gmt-2 d-flex flex-row align-items-center justify-content-center justify-content-lg-between">
 						<?php
 							$page_header_logos = $acf_field['page_header_logos'];
 							if(!empty($page_header_logos)){
@@ -75,7 +75,7 @@ $next = '#'.$get_sections[0]['id'];
 
 			</div>
 
-			<div class="d-lg-none col-md-5 gpt-3 gpl-2">
+			<div class="d-lg-none col-md-5 gpt-1 gpt-md-3 gpl-2">
 				<div id="cloned-title" data-is-inview-addclass="fadeInUp" data-is-inview-removeclass="fadeOutDown" class="animated fadeOutDown">
 					</div>
 			</div>

@@ -88,7 +88,7 @@ $acf_field = $args['acf_field'];
 				$descripcion_larga = WPBC_get_field( 'descripcion_larga' );
 				$delay = .3 * ($count+1) . 's';
  				?>
-<div class="col-md-4 gmb-2 gmb-md-1" data-is-inview-offset="-200" data-is-inview="detect">
+<div class="col-lg-4 gmb-2 gmb-md-1" data-is-inview-offset="-200" data-is-inview="detect">
 	<div <?php WPBC_make_is_inview_fadeInUp_attrs(array( 'delay'=>$delay, 'class' => 'h-100' )); ?>>
 	<div class="ui-box-shadow ui-box-hover h-100 bg-light text-center pb-1">
 		

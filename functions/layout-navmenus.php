@@ -8,7 +8,7 @@
 
 add_filter('wpbc/filter/layout/main-navbar/custom_collapse', function($args){
 	$args['collapse']['id'] = 'collapse-custom';
-	$args['collapse']['class'] = 'bg-white collapse-custom-right'; // collapse-custom-full, collapse-custom-full ,collapse-custom-top 
+	$args['collapse']['class'] = 'bg-primary collapse-custom-right'; // collapse-custom-full, collapse-custom-full ,collapse-custom-top 
 	$args['collapse']['toggler_class'] = 'toggler-white btn bg-primary gpy-1 gpx-2';
 	$args['collapse']['toggler_attrs'] = ' data-btn="fx" ';
 	// $args['collapse']['content'] = 'OPS';

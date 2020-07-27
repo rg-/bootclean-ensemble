@@ -127,7 +127,7 @@ $acf_field = $args['acf_field'];
 						<?php } ?>
 					</ul>
 				<?php }?>
-				<p class="m-0 text-right">
+				<p class="m-0 text-center text-md-right">
 					<a href="<?php echo $ver_unidad_link;?>" target="_blank" data-btn="fx" data-fx="right" class="btn btn-secondary btn-sm">Ver unidad [icon_arrow_right xs=1]</a>
 				</p>
 			</div>

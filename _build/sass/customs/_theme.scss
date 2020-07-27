@@ -2,6 +2,12 @@ html,body {
 	height:100%; 
 }
 
+#go-up{
+	@include breakpoint-max(md){
+		display: none;
+	}
+}
+
 .isv-lazysrc-loader{ 
   background-color: transparent!important; 
 }
@@ -35,6 +41,13 @@ body{
 	line-height: 1.1;
 }
 
+.display-4{
+	@include breakpoint-max(md){
+		font-size: 2.6rem;
+		line-height: 1;
+	}
+}
+
 .text-white .section-title{
 	color:white;
 }
@@ -43,6 +56,14 @@ body{
 	font-size: 45px;
 	&.sm{
 		font-size: 26px;
+		@include breakpoint-max(md){
+			line-height: 1.4;
+		}
+	}
+	@include breakpoint-max(md){
+		font-size: 2rem;
+		line-height: 1;
+		margin-bottom:20px;
 	}
 } 
 
@@ -132,7 +153,7 @@ body{
 	}
 }
 
-[data-btn="fx"]{
+[data-btn="fx"].js-enabled{
 	padding:0!important;
 	position:relative;
 	overflow: hidden;
@@ -304,7 +325,7 @@ button:focus{
 .ui-img-rounded{
 	border-radius: 100%;
   background-color: $secondary;
-  max-width: 212px!important;
+  width: 212px!important;
   margin: 0 auto;
 }
 
@@ -428,7 +449,18 @@ button:focus{
 .footer-bg{
 	background-color: #5886ff;
 }
- 
+
+.page_header_logos{ 
+	@include breakpoint-max(md){ 
+		margin-right: -20px;
+		margin-left: -20px;
+			img{
+			height: 40px;
+			width: auto;
+			margin: 0 10px;
+		}
+	}
+}
 
 .custom-slick-arrow{
 	background-color:$primary!important;
@@ -436,7 +468,13 @@ button:focus{
   border-radius: 31px;
   width: auto;
   height: auto;
+  position:absolute;
   @include box-shadow(none!important); 
+
+  @include breakpoint-max(sm){
+  	top: 25%!important;
+  }
+
   i{
   	width: 24px;
   	height: 24px;
@@ -447,9 +485,13 @@ button:focus{
 		content: "";
 		display: none!important;
 	}
-
-	&[data-btn="fx"]{
-		padding:0!important;
+	&[data-btn="fx"]:not(.js-enabled){
+		.fx-x{
+			display: none;
+		}
+	}
+	&[data-btn="fx"].js-enabled{
+		padding:0!important; 
 		position:absolute;
 		.fx-w,.fx-x{
 			padding: 20px 30px;
@@ -464,25 +506,74 @@ button:focus{
 	background-color:transparent;
 	border:2px solid $secondary;
 	padding: 0;
+
 	.fx-w,.fx-x{
-		padding: 0;
+		padding: 0!important;
 		width: 100%;
     height: 100%;
-    display: flex;
+    display: flex!important;
     align-items: center;
     justify-content: center;
     svg {
-    	right: 0
+    	right: 0!important;
     }
 	}
 	&:hover{
 		background-color:$secondary;
 	}
+	
+	&:not(.js-enabled){
+		svg {
+    	right: 0!important;
+    	vertical-align: -15px;
+    }
+	}
+}
+
+#main-navbar{
+	.navbar-brand{
+		img{
+			
+			@include breakpoint-max(sm){
+				width: 166px;
+			}
+		}
+	}
+	.navbar-toggler{
+		@include breakpoint-max(sm){
+			right: -31px;
+			top: 2px;
+		}
+	}
 }
 
 .collapse-custom{
 
+	&:after {
+		content:"";
+		position:absolute; 
+		top:0;
+		left:100%;
+		right: 0;
+		bottom:0;
+		
+	} 
+	&:after{
+		@include transition(.5s ease all .3s);
+		z-index: -1; 
+		background-color:#fff;
+	}
+
+	&.opened{ 
+		&:after {
+			@include transition(.8s ease all);
+			left:10px;
+		}
+	}
+	
+
 	.navbar-toggler{
+		@include scale(.8);
 		.custom-toggler{
 			top: 3px;
 		}
@@ -494,7 +585,7 @@ button:focus{
 
 	.nav-link{
 		font-weight: 900;
-		font-size: 28px;
+		font-size: 20px;
 		line-height: 1.1; 
 		position: relative;
 		padding-left: 44px;
@@ -504,8 +595,7 @@ button:focus{
 			}
 		}
 
-		@include breakpoint(md){
-			font-size: 38px;
+		@include breakpoint(md){ 
 			margin:8px 0;
 		}
 
@@ -514,18 +604,17 @@ button:focus{
 			@include rotate(-90deg);
 			content: "";
 			position: absolute;
-			top: 9px;
+			top: 6px;
 			left: 4px;
 			vertical-align: middle;
 			width: 24px; 
 			height: 24px;
 			display: inline-block;
 			background-repeat: no-repeat;
-			background-size: 24px auto;
+			background-size: 16px auto;
 			background-position:center center;
 
-			@include breakpoint(md){
-				top: 16px;
+			@include breakpoint(md){ 
 			}
 
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='rotate--90' style='width:16px;height:auto;' x='0px' y='0px' width='18.636px' height='19.254px' viewBox='0 0 18.636 19.254' xml:space='preserve'%3E%3Cpath fill='%232c63f4' d='M18.292,7.942c-0.416-0.362-1.048-0.321-1.41,0.098l-6.563,7.541V1c0-0.552-0.447-1-1-1c-0.552,0-1,0.448-1,1v14.583 L1.754,8.04C1.391,7.623,0.76,7.58,0.344,7.942c-0.417,0.363-0.46,0.994-0.098,1.411l8.317,9.558 c0.008,0.009,0.02,0.012,0.028,0.021C8.655,19,8.735,19.051,8.816,19.1c0.035,0.021,0.063,0.051,0.101,0.067 c0.119,0.053,0.249,0.082,0.388,0.084c0.004,0,0.008,0.003,0.013,0.003c0,0,0,0,0.001,0l0,0c0.144,0,0.279-0.033,0.402-0.088 c0.028-0.012,0.049-0.035,0.076-0.051c0.093-0.052,0.18-0.11,0.252-0.188c0.006-0.007,0.016-0.009,0.022-0.017l8.318-9.558 C18.753,8.936,18.709,8.305,18.292,7.942z'%3E%3C/path%3E%3C/svg%3E");
