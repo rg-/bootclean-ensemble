@@ -47,6 +47,8 @@
 
 	include('functions/theme-textdomain.php'); 
 	include('functions/theme-options.php');
+	include('functions/theme-users.php');
+	include('functions/theme-login.php'); 
 	// include('functions/theme-options-page-settings.php');
 	include('functions/theme-scripts.php');
 	include('functions/theme-fonts.php');

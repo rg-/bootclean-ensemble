@@ -17,7 +17,7 @@ add_filter('wpbc/filter/acf/enable_acf_form',function(){
 */
 
 add_filter('WPBC_options_show_menu',function(){
-	return true; // false default
+	return false; // false default
 }, 10, 1);
 
 /*
