@@ -37,7 +37,7 @@ $acf_field = $args['acf_field'];
 
 		<div class="col-md-5 text-left text-md-right">
 			<div <?php WPBC_make_is_inview_fadeInLeft_attrs(array( 'delay'=>'.9s' )); ?>>
-				<p><a href="#" class="btn btn-link" data-btn="fx" data-fx="right">Ver libro completo [icon_arrow_right]</a></p>
+				<p><a href="<?php echo $acf_field['libro_completo_url']; ?>" target="_blank" class="btn btn-link" data-btn="fx" data-fx="right">Ver libro completo [icon_arrow_right]</a></p>
 			</div>
 		</div>
 

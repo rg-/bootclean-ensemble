@@ -160,6 +160,7 @@ add_filter('wpbc/filter/template-landing/sub_fields/?group=page_header', functio
 
 
 add_filter('wpbc/filter/template-landing/sub_fields/?group=section-unidades', function($sub_fields){
+	
 	$sub_fields[] = WPBC_acf_make_text_field(
 		array(
 			'name'=> 'title',
@@ -167,10 +168,19 @@ add_filter('wpbc/filter/template-landing/sub_fields/?group=section-unidades', fu
 			'class'=>'acf-input-title',
 		)
 	);
+	
 	$sub_fields[] = WPBC_acf_make_textarea_field(
 		array(
 			'name'=> 'destacado',
 			'label'=>'Texto destacado',
+			'class'=>'',
+		)
+	);
+
+	$sub_fields[] = WPBC_acf_make_url_field(
+		array(
+			'name'=> 'libro_completo_url',
+			'label'=>'URL Libro Completo',
 			'class'=>'',
 		)
 	);
