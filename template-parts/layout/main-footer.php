@@ -92,7 +92,9 @@
 				</div>
 
 				<div <?php WPBC_make_is_inview_fadeInRight_attrs(array( 'delay' => '1.2s' )); ?>>
-					<img width="264" src="<?php echo get_stylesheet_directory_uri(); ?>/images/theme/footer-dibujo.png" alt=" "/>
+					<div class="text-center">
+						<img width="264" src="<?php echo get_stylesheet_directory_uri(); ?>/images/theme/footer-dibujo.png" alt=" "/>
+					</div>
 				</div>
 
 			</div>
