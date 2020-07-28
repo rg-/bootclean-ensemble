@@ -76,7 +76,7 @@ $next = '#'.$get_sections[0]['id'];
 			</div>
 
 			<div class="d-lg-none col-md-5 gpt-1 gpt-md-3 gpl-2">
-				<div id="cloned-title" data-is-inview-addclass="fadeInUp" data-is-inview-removeclass="fadeOutDown" class="animated fadeOutDown">
+				<div id="cloned-title">
 					</div>
 			</div>
 

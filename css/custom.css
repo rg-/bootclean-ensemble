@@ -7750,10 +7750,11 @@ button:focus {
   width: auto;
   height: auto;
   position: absolute;
-  box-shadow: none !important; }
-  @media (max-width: 767.98px) {
+  box-shadow: none !important;
+  top: 25% !important; }
+  @media (min-width: 576px) {
     .custom-slick-arrow {
-      top: 25% !important; } }
+      top: 50% !important; } }
   .custom-slick-arrow i {
     width: 24px;
     height: 24px;

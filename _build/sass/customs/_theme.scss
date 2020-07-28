@@ -471,8 +471,9 @@ button:focus{
   position:absolute;
   @include box-shadow(none!important); 
 
-  @include breakpoint-max(sm){
-  	top: 25%!important;
+  top: 25%!important;
+  @include breakpoint(sm){
+  	top: 50%!important;
   }
 
   i{
