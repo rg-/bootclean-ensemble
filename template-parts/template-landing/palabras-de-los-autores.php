@@ -86,7 +86,7 @@ $acf_field = $args['acf_field'];
  				$autores->the_post(); 
  				$title = get_the_title(); 
 				$descripcion_larga = WPBC_get_field( 'descripcion_larga' );
-				$delay = .3 * ($count+1) . 's';
+				$delay = .1 * ($count+1) . 's';
  				?>
 <div class="col-lg-4 gmb-2 gmb-md-1" data-is-inview-offset="-200" data-is-inview="detect">
 	<div <?php WPBC_make_is_inview_fadeInUp_attrs(array( 'delay'=>$delay, 'class' => 'h-100' )); ?>>

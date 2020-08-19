@@ -73,18 +73,7 @@ add_filter('WPBC_enqueue_scripts__footer_scripts', function($scripts){
 },10,1);
 
 
-/*
-	
-	ADDON slick-lazy
-
-*/
-add_filter('WPBC_enqueue_scripts__footer_scripts', function($scripts){  
-	$scripts['slick-lazy'] = array(
-		'src'=> CHILD_THEME_URI .'/addons/slick-lazy/slick-lazy.js',
-		'dependence' => array('jquery')
-	);  
-	return $scripts;
-},10,1);
+ 
 
 /*
 	

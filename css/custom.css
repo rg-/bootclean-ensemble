@@ -5749,13 +5749,16 @@ span.wpcf7-not-valid-tip {
   right: inherit;
   max-width: 100%;
   bottom: inherit;
-  overflow-y: hidden;
+  overflow-y: inherit;
   color: inherit;
   background-color: inherit;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  transition: none; }
+  transition: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
   @media (prefers-reduced-motion: reduce) {
     .navbar-expand .collapse-custom {
       transition: none; } }
@@ -5789,13 +5792,16 @@ span.wpcf7-not-valid-tip {
     right: inherit;
     max-width: 100%;
     bottom: inherit;
-    overflow-y: hidden;
+    overflow-y: inherit;
     color: inherit;
     background-color: inherit;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    transition: none; } }
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
   @media (min-width: 576px) and (prefers-reduced-motion: reduce) {
     .navbar-expand-sm .collapse-custom {
       transition: none; } }
@@ -5832,13 +5838,16 @@ span.wpcf7-not-valid-tip {
     right: inherit;
     max-width: 100%;
     bottom: inherit;
-    overflow-y: hidden;
+    overflow-y: inherit;
     color: inherit;
     background-color: inherit;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    transition: none; } }
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
   @media (min-width: 768px) and (prefers-reduced-motion: reduce) {
     .navbar-expand-md .collapse-custom {
       transition: none; } }
@@ -5875,13 +5884,16 @@ span.wpcf7-not-valid-tip {
     right: inherit;
     max-width: 100%;
     bottom: inherit;
-    overflow-y: hidden;
+    overflow-y: inherit;
     color: inherit;
     background-color: inherit;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    transition: none; } }
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
   @media (min-width: 992px) and (prefers-reduced-motion: reduce) {
     .navbar-expand-lg .collapse-custom {
       transition: none; } }
@@ -5918,13 +5930,16 @@ span.wpcf7-not-valid-tip {
     right: inherit;
     max-width: 100%;
     bottom: inherit;
-    overflow-y: hidden;
+    overflow-y: inherit;
     color: inherit;
     background-color: inherit;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    transition: none; } }
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
   @media (min-width: 1310px) and (prefers-reduced-motion: reduce) {
     .navbar-expand-xl .collapse-custom {
       transition: none; } }
